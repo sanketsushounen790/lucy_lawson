@@ -1,0 +1,25 @@
+{
+  "name": "lucy_lawson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "jsonfile": "^6.1.0",
+    "mongoose": "^5.11.8",
+    "node-fetch": "^2.6.5",
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
