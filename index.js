@@ -14,8 +14,12 @@ import help from "./commands/guild/help.js"
 import pick from "./commands/guild/pick.js"
 import advise from "./commands/guild/advise.js"
 import ava from "./commands/guild/ava.js"
+import lol from "./commands/guild/lol.js"
+
+//moderator commands
 import kick from "./commands/moderator/kick.js"
 import ban from "./commands/moderator/ban.js"
+
 //mini games
 import init from "./commands/guild/init.js"
 import { runRussianRoulette } from "./mini_games/russianRoulette.js"
@@ -58,6 +62,8 @@ client.on("message", message => {
       init.execute(message, args, client)
     } else if (command == ava.name) {
       ava.execute(message, args)
+    } else if (command == lol.name) {
+      lol.execute(message, args)
     } else if (command == kick.name) {
       kick.execute(message)
     } else if (command == ban.name) {

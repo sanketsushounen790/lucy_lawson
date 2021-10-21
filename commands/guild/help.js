@@ -2,6 +2,7 @@
 import loichua from "./loichua.js"
 import nuoc from "./nuoc.js"
 import img from "./img.js"
+import lol from "./lol.js"
 import pick from "./pick.js"
 import advise from "./advise.js"
 import ava from "./ava.js"
@@ -11,6 +12,7 @@ const commands = [
 	loichua,
 	nuoc,
 	img,
+	lol,
 	pick,
 	advise,
 	ava,
