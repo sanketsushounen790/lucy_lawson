@@ -74,8 +74,9 @@ export const dropBaiCao = (message) => {
 }
 
 export const initBaiCao = (message, client) => {
-    if(message.mentions.users.size < 2){
-        message.channel.send("Trò chơi cần 2 người trở lên. Hãy rủ thêm bạn đi nào !")
+    console.log(message.mentions.users.size)
+    if (!message.mentions.users.size || message.mentions.users.size < 2) {
+        return message.reply("Trò chơi cần tag tên 2 người trở lên. Hãy rủ thêm bạn đi nào !")
     }
 
     baiCaoProps.status = true

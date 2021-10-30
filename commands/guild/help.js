@@ -22,11 +22,13 @@ const commands = [
 const miniGames = [
 	{
 		index: 1,
-		name: "russian_roulette (rr)"
+		name: "russian_roulette (rr)",
+		syntax: ""
 	},
 	{
 		index: 2,
-		name: "bai_cao (bc)"
+		name: "bai_cao (bc)",
+		syntax: `@[tên người chơi 1] @[tên người chơi 2]... @[tên người chơi n]`
 	}
 ]
 
@@ -36,24 +38,20 @@ const guildInstructions = commands.map(command => {
 			return (
 				`**KINH THÁNH CÔNG GIÁO**\n${command.commandFormat} ${command.description}\n\n`
 			)
-			break
 		case "others_genesis":
 			return (
 				`**CÁC LỆNH CỦA SERVER**\n${command.commandFormat} ${command.description}\n`
 			)
-			break
 		case "mini_games":
 			return miniGames.map(miniGame => { 
 				if(miniGame.name === "russian_roulette (rr)") {
 					return `**MINI GAMES**\n${command.commandFormat} ${command.description}\n\n***Danh sách tên các trò chơi:***\n${miniGame.index}: ${miniGame.name}`
 				} else {
-					return `\n${miniGame.index}: ${miniGame.name}`
+					return `\n${miniGame.index}: ${miniGame.name} ${miniGame.syntax}`
 				}
 			})
-			break
 		default:
 			return `${command.commandFormat} ${command.description}\n`
-			break
 	}
 })
 
