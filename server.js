@@ -4,7 +4,7 @@ import dotenv from "dotenv"
 
 //App Config
 dotenv.config()
-const port = process.env.PORT 
+const port = process.env.PORT || 3500
 const uri = process.env.LUCY_LAWSON_URI
 
 //Middlewares

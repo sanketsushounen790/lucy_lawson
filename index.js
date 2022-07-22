@@ -184,7 +184,7 @@ client.on("message", message => {
 
   //bot reacts
   switch (message.content.toLowerCase()) {
-    case "huy đẹp trai":
+    case "tin đẹp trai":
       message.author.send("Chính xác luôn 😍")
       message.react("💖")
       message.react("😍")
@@ -192,21 +192,22 @@ client.on("message", message => {
       message.react("👍")
       message.react("💯")
       break
-    case "duy đẹp trai":
+    case "bo đẹp trai":
+    case "thắng đẹp trai":
       message.author.send("Có cc ý 🤮")
       message.react("🤮")
       message.react("🤢")
       message.react("👎")
       message.react("👊")
       break
-    case "huy pro":
+    case "tin pro":
       message.react("💯")
       message.react("👍")
       message.channel.send(`<:fekar:889425501360373831> <:fekar:889425501360373831> <:fekar:889425501360373831>`)
 
       break
     case "duy pro":
-    case "hiếu pro":
+    case "thắng pro":
       message.react("🐔")
       message.react("🐓")
       message.channel.send(`<:chick:889425502031450112> <:chick:889425502031450112> <:chick:889425502031450112>`)
