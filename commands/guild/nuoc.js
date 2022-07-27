@@ -6,7 +6,7 @@ const numberWithCommas = (number) => {
 
 const nuoc = {
     name: "nuoc",
-    topic: "others_genesis",
+    topic: "others",
     commandFormat : "`!nuoc [tên quốc gia] :`",
     description: `*Bot đưa thông tin cơ bản của nước cần tìm.*`,
     args: true,
@@ -76,7 +76,7 @@ const nuoc = {
                     },
                 ],
                 image: {
-                    url: 'https://i.imgur.com/wSTFkRM.png',
+                    url: countryInfo["flag"],
                 },
                 timestamp: new Date(),
                 footer: {

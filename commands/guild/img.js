@@ -2,7 +2,7 @@ import getPhotosData from "../../actions/fetch_apis/getPhotosData.js"
 
 const img = {
     name: "img",
-    topic: "others",
+    topic: "others_genesis",
     commandFormat: "`!img [từ khóa] :`",
     description: `*Bot đưa ra 10 tấm ảnh liên quan đến từ khóa của bạn.*`,
     args: true,

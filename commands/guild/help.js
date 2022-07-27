@@ -1,6 +1,6 @@
 //commands
 import loichua from "./loichua.js"
-import nuoc from "./nuoc.js"
+//import nuoc from "./nuoc.js"
 import img from "./img.js"
 import lol from "./lol.js"
 import pick from "./pick.js"
@@ -10,7 +10,7 @@ import init from "./init.js"
 
 const commands = [
 	loichua,
-	nuoc,
+	//nuoc,
 	img,
 	lol,
 	pick,
